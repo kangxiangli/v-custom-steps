@@ -28,6 +28,10 @@
     </el-row>
 ```
 
+**如下图:**
+
+![ProgramProject](./images/1.jpg)
+
 ### 横竖式步骤条
 
 需要指定`direction`的值、分别为`horizontal`是水平方向，`'vertical'`是垂直方向，默认的是垂直
@@ -41,6 +45,10 @@
   </el-col>
 </el-row>
 ```
+**如下图:**
+
+![ProgramProject](./images/2.jpg)
+
 ## 设置每个步骤条的间距
 
 用设置 <code>space='200'</code>来设置步长，每个 step 的间距，不填写将自适应间距。支持百分比。
@@ -53,7 +61,11 @@
       </el-col>
     </el-row>
 ```
-:::
+
+**如下图:**
+
+![ProgramProject](./images/3.jpg)
+
 ##  theme换肤步骤条
 
 设置 <code>theme='#800080'</code>来换肤，configStyle和theme都设置的时候优先configStyle。
@@ -80,6 +92,9 @@
 }
 </script>
 ```
+**如下图:**
+
+![ProgramProject](./images/4.jpg)
 
 ## 居中的步骤条
 
@@ -93,6 +108,10 @@
       </el-col>
     </el-row>
 ```
+**如下图:**
+
+![ProgramProject](./images/5.jpg)
+
 ## 步骤条的样式和事件
 
 设置`configStyle`可以对步骤条上的dom更改样式，通过`@clickItem="testClick" `来处理点击事件，注意修改 `mediumLineStyle`中线的宽的的时候也要相对应的改变圆的大小
@@ -142,6 +161,9 @@
 }
 </script>
 ```
+**如下图:**
+
+![ProgramProject](./images/6.jpg)
 
 ## 步骤条错位展示
 
@@ -155,6 +177,9 @@
       </el-col>
     </el-row>
 ```
+**如下图:**
+
+![ProgramProject](./images/7.jpg)
 
 ## 插槽事列
 
@@ -176,7 +201,9 @@
       </el-col>
     </el-row>
 ```
-:::
+**如下图:**
+
+![ProgramProject](./images/8.jpg)
 ## Props
 
 | 参数         | 说明                                                   | 类型      | 可选值                | 默认值                      |
