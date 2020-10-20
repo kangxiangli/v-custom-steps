@@ -1,18 +1,39 @@
 # v-custom-steps 步骤条
 
-<!-- <script>
- import originData from '../../components-mock/step.json'
- import oDataAnyone from '../../components-mock/step-anyone.json'
-
-  export default {
-    data () {
-      return {
-       widgetData: originData.content,
-       oDataAnyone:oDataAnyone.content
-      }
-    }
+```
+let widgetData =[
+  {
+    "key": "2019-01-01 17:36:00",
+    "name": "系统损害",
+    "value": 232
+  },
+  {
+    "key": "2019-01-01 17:36:00",
+    "name": "安装&植入",
+    "value": 211
+  },
+  {
+    "key": "2019-01-01 17:36:00",
+    "name": "传送&系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害",
+    "value": 189
   }
-</script> -->
+]
+let oDataAnyone =[
+  {
+    "name": "系统损害",
+    "value": 232
+  },
+  {
+    "name": "安装&植入",
+    "value": 211
+  },
+  {
+    "name": "传送&系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害系统损害",
+    "value": 189
+  }
+]
+
+```
 
 引导用户按照流程完成任务的分步导航条，可根据实际应用场景设定步骤，步骤尽量不少于 2 步。
 `注意 该组件是要是使用flex布局，因此有兼容性问题`
