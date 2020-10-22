@@ -1,11 +1,11 @@
-import vCustomSteps from './v-custom-steps.vue'
-const comment = {
+import mycomponent from './v-custom-steps.vue'
+const vCustomSteps = {
   install: function(Vue) {
-    Vue.component('vCustomSteps', vCustomSteps)
+    Vue.component('vCustomSteps', mycomponent)
   }
 }
 // 这里的判断很重要
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(comment)
+    window.Vue.use(vCustomSteps)
 }
-export default comment
+export default vCustomSteps

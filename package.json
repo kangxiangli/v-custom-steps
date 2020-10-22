@@ -1,7 +1,7 @@
 {
   "name": "v-custom-steps",
   "description": "vue 步骤条",
-  "version": "0.1.3",
+  "version": "0.1.7",
   "author": "kangxiangli <1140379339@qq.com>",
   "license": "MIT",
   "private": false,
@@ -14,8 +14,8 @@
     "src",
     "packages"
   ],
-  "homepage": "http://element.eleme.io",
-  "main": "/src/lib/index.js",
+  "homepage": "https://github.com/kangxiangli/v-custom-steps/blob/master/README.md",
+  "main": "src/lib/index.js",
   "dependencies": {
     "@ant-design/colors": "^4.0.5",
     "deepmerge": "^4.2.2",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ElemeFE/element.git"
+    "url": "https://github.com/kangxiangli/v-custom-steps.git"
   },
   "browserslist": [
     "> 1%",
