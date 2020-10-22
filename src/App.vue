@@ -63,8 +63,12 @@
         </vCustomSteps>
       </div>
       <!-- 插槽示列 end -->
-
-    </div>
+      <div class="title">下面这种也是链式数据展示详情看<div class="block">https://www.npmjs.com/package/v-svg-chain</div></div>
+        <div class="content">
+          <v-svg-chain @clickItem="testClick" style="height: 300px;" :data="originData" :style="{ backgroundColor: 'black' }">
+        </v-svg-chain>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -80,6 +84,43 @@ export default {
   },
   data () {
     return {
+       originData:[
+        {
+          "key": "/System_Compromise",
+          "name": "系统损害",
+          "value": 232
+        },
+        {
+          "key": "/Exploitation_Installation",
+          "name": "安装&植入",
+          "value": 211
+        },
+        {
+          "key": "/Delivery_attack",
+          "name": "传送&攻击",
+          "value": 189
+        },
+        {
+          "key": "/Delivery_attack1",
+          "name": "测试数据",
+          "value": 166
+        },
+        {
+          "key": "/Exploitation_Installation",
+          "name": "安装&植入",
+          "value": 211
+        },
+        {
+          "key": "/Delivery_attack",
+          "name": "传送&攻击",
+          "value": 189
+        },
+        {
+          "key": "/Delivery_attack1",
+          "name": "测试数据",
+          "value": 166
+        }
+      ],
       data: data,
       oDataAnyone: oDataAnyone,
       config2: {

@@ -5712,6 +5712,28 @@ uuid@^3.0.1:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
+v-custom-steps@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/v-custom-steps/-/v-custom-steps-0.1.9.tgz#c90b67552cd9eb1f2da7141a712d3b9febafc27f"
+  integrity sha512-JRpOPbqKyuQQ1Ex/+HxQ+29XkwtaSI++g3soKHYCKRlmPELaYFhmk/kvqWl04DciObetQcVKJtEW0QEI3EeG4Q==
+  dependencies:
+    "@ant-design/colors" "^4.0.5"
+    deepmerge "^4.2.2"
+    postcss-functions "^3.0.0"
+    postcss-mixins "^6.2.1"
+    vue "^2.5.11"
+
+v-svg-chain@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/v-svg-chain/-/v-svg-chain-0.1.0.tgz#7813a4528df3a68e66917f371b54ab92108b5f3f"
+  integrity sha512-5zrcsYeNZxHjTh4rAubSv+LtXwfM8XvWJsvfZcEcI7eUkCIhitQGHi+edsfsFjJxtCaks/x6LIEE9cqgcGN87g==
+  dependencies:
+    deepmerge "^4.2.2"
+    postcss-functions "^3.0.0"
+    postcss-mixins "^6.2.1"
+    v-custom-steps "^0.1.9"
+    vue "^2.5.11"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"

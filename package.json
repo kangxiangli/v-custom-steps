@@ -1,7 +1,7 @@
 {
   "name": "v-custom-steps",
   "description": "vue 步骤条",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "author": "kangxiangli <1140379339@qq.com>",
   "license": "MIT",
   "private": false,
@@ -19,9 +19,10 @@
   "dependencies": {
     "@ant-design/colors": "^4.0.5",
     "deepmerge": "^4.2.2",
-    "vue": "^2.5.11",
     "postcss-functions": "^3.0.0",
-    "postcss-mixins": "^6.2.1"
+    "postcss-mixins": "^6.2.1",
+    "v-svg-chain": "^0.1.0",
+    "vue": "^2.5.11"
   },
   "repository": {
     "type": "git",
@@ -45,15 +46,15 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1",
     "postcss-calc": "^7.0.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
     "postcss-url": "^8.0.0",
-    "precss": "^4.0.0"
+    "precss": "^4.0.0",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   },
   "unpkg": "src/lib/index.js"
 }
