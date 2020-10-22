@@ -242,14 +242,11 @@ export default {
     this.$nextTick(function () {
       this.linkLine() // 中线的连接线的样式
       this.textFormat() // 两边文字样式
-      // 创建暂无数据展示节点
-      // this.createEmptyDom()
     })
   }
 }
 </script>
 <style scoped lang="postcss">
-/* @import "./style/css.css"; */
 .idss_step_page {
   width: 100%;
   height: 100%;

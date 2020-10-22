@@ -35,7 +35,8 @@ let oDataAnyone =[
 
 ```
 
-引导用户按照流程完成任务的分步导航条，可根据实际应用场景设定步骤，步骤尽量不少于 2 步。
+>引导用户按照流程完成任务的分步导航条，可根据实际应用场景设定步骤，步骤尽量不少于 2 步。该组件内部有依赖postcss，使用的话需要安装相关依赖详情看最下方；
+
 `注意 该组件是要是使用flex布局，因此有兼容性问题`
 ## 基础用法
 >步骤条组件, 仅需传递 <code>data</code>即可。
@@ -277,6 +278,74 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+### postcss相关配置和依赖
+* 在根目录下建 `postcss.config.js`文件内容如下：
+```
+module.exports = {
+  plugins: {
+    'postcss-import': {
+      path: ['src/style']
+    },
+    'postcss-mixins': {
+    },
+    'postcss-preset-env': {
+      features: {
+        'custom-properties': {
+          preserve: true
+        },
+        'color-mod-function': true
+      }
+    },
+    'postcss-calc': {},
+    'precss': {}
+  }
+}
 
+```
+* package.json 依赖
+  ```
+  //devDependencies
+    "postcss-calc": "^7.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-url": "^8.0.0",
+    "precss": "^4.0.0"
+   //dependencies
+    "postcss-functions": "^3.0.0",
+    "postcss-mixins": "^6.2.1"
+  ```
+* webpack.config.js 文件配置
+  ```
+  //module.rules里添加
+   module: {
+    rules: [
+      <!-- 添加配置的主要内容 start -->
+      {
+        test: /\.(css|postcss)$/,
+        include: [path.resolve(__dirname, './src')],
+        exclude: /node_modules/,
+        use: [
+            'vue-style-loader',
+            {
+                loader: 'css-loader',
+                options: {
+                    modules: false,
+                    importLoaders: 1
+                }
+            },
+            {
+                loader: 'postcss-loader',
+                options: {
+                    plugins: [
+                        require('postcss-import')(),
+                        require('postcss-url')(),
+                        require('autoprefixer')()
+                    ]
+                }
+            }
+        ]
+    },
+    <!-- 主要内容 end -->
+    ...
+  ```
