@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'v-custom-steps.js',
+    library:'v-custom-steps',
     libraryTarget:'umd',
     umdNamedDefine:true
   },
