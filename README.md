@@ -349,3 +349,19 @@ module.exports = {
     <!-- 主要内容 end -->
     ...
   ```
+
+### yarn 和npm使用
+
+```
+//npm
+npm i v-custom-steps
+//yarn
+yarn add v-custom-steps
+```
+```
+import Vue from 'vue'
+import vCustomSteps from 'v-custom-steps'
+
+Vue.use(vCustomSteps)
+```
+
