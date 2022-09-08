@@ -1,7 +1,7 @@
 {
   "name": "v-custom-steps",
   "description": "vue 步骤条",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "kangxiangli <1140379339@qq.com>",
   "license": "MIT",
   "private": false,
