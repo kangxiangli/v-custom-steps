@@ -28,6 +28,9 @@
     "type": "git",
     "url": "https://github.com/kangxiangli/v-custom-steps.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
